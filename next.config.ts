@@ -1,7 +1,26 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "github-readme-stats.vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "github-readme-streak-stats.demolab.com",
+      },
+      {
+        protocol: "https",
+        hostname: "github-readme-activity-graph.vercel.app",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
